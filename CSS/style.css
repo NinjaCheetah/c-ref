@@ -13,12 +13,30 @@
   padding: 0px;
 }
 .sidebar li {
-  list-style-type: none;
+  list-style-type: decimal;
   text-align: left;
 }
 .sidebar p {
   margin: 1px;
 }
+.sidebar h3 {
+  margin: 4px;
+}
 .main {
   margin-left: 18%;
+}
+.section {
+  color: black;
+}
+.section:hover {
+  color: red;
+}
+.item {
+  text-decoration: none;
+}
+.item:link, .item:visited {
+  color: blue;
+}
+.item:hover {
+  color: red;
 }
