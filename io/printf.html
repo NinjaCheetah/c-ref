@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simplified C Reference Guide</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+  </head>
+  <body>
+    <div class="sidebar">
+      <ul>
+        <li><p><a href="/" class="section">&lt;- Back</a></p></li>
+        <li><h2>Input/Output</h2></li>
+        <li><p><a href="https://ncxprogramming.com" class="item">&bull; printf()</a></p></li>
+        <li><p><a href="https://ncxprogramming.com" class="item">&bull; scanf()</a></p></li>
+        <li><p><a href="https://ncxprogramming.com" class="item">&bull; fflush()</a></p></li>
+        <li><p><a href="https://ncxprogramming.com" class="item">&bull; fopen()</a></p></li>
+        <li><p><a href="https://ncxprogramming.com" class="item">&bull; fclose()</a></p></li>
+        <li><p><a href="io/" class="item">See all</a></p></li>
+        <li><h5>This site Copyright (c) NinjaCheetah 2021</h5></li>
+      </ul>
+    </div>
+    <div class="main">
+      <h1>printf</h1>
+      <h3>printf("some text to output")</h3>
+      <p>Header: <code>stdio.h</code></p>
+      <p><a href="http://manpages.org/printf">Printf on manpages.org</a></p>
+      <p>printf is one of the most basic C functions, and is used to print text to the console. The most basic usage is just <code>printf("the text you want to print, in quotes")</code>.</p>
+      <p>printf accepts multiple arguments, however you only need to supply one; the text you want to print. Any additional arugments are variables that you want to print as part of your text. To print a number of some sort, such as an integer, you place <code>%d</code> where the number should go, and then after your end quote you add the variable that will fill in that space (as shown in Example 2). To print a char, you place a <code>%s</code> where the char should go, and then after your end quote you add the variable that will fill in that space (as shown in Example 3). Multiple variables are supported, you just add them after your end quote in the order that they are placed inside the parenthesis (as shown in Example 4).</p>
+      <h4>Examples:</h4>
+      <p>Example 1</p>
+      <div class="code">
+        <p>// Printing just text, with no variables</p>
+        <p>#include &lt;stdio.h&gt;</br></br>int main() {</p>
+        <p class="indented">printf("Hello world!");</p>
+        <p>}</p>
+      </div>
+      <p>Example 2</p>
+      <div class="code">
+        <p>// Printing a number in your text</p>
+        <p>#include &lt;stdio.h&gt;<br><br>int number = 10;<br><br>int main() {</p>
+        <p class="indented">printf("My number is: %d",number);</p>
+        <p>}</p>
+      </div>
+      <p>Example 3</p>
+      <div class="code">
+        <p>// Printing a char in your text</p>
+        <p>#include &lt;stdio.h&gt;<br><br>char text[6] = "word";<br><br>int main() {</p>
+        <p class="indented">printf("My text is: %s",text);</p>
+        <p>}</p>
+      </div>
+      <p>Example 4</p>
+      <div class="code">
+        <p>// Printing multiple variables in your text</p>
+        <p>#include &lt;stdio.h&gt;<br><br>int number = 15</p>
+        <p>char words[6] = "hello"<br><br>int main() {</p>
+        <p class="indented">printf("My text is %s and my number is %d.",words,number);</p>
+        <p>}</p>
+      </div>
+    </div>
+  </body>
+</html>

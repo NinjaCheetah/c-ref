@@ -40,3 +40,22 @@
 .item:hover {
   color: red;
 }
+.code {
+  font-family: Consolas,"courier new";
+  color: black;
+  background-color: #f1f1f1;
+  padding: 2px;
+}
+.code p {
+  padding: 0px;
+  margin: 0px;
+}
+code {
+  font-family: Consolas,"courier new";
+  color: black;
+  background-color: #f1f1f1;
+  padding: 2px;
+}
+.indented {
+  text-indent: 30px;
+}
