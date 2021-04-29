@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simplified C Reference Guide</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+  </head>
+  <body>
+    <div class="sidebar">
+      <ul>
+        <li><p><a href="/" class="section">&lt;- Back</a></p></li>
+        <li><h2><a href="/var/" class="section">Variable Types</a></h2></li>
+        <li><p><a href="/var/int" class="item">&bull; int</a></p></li>
+        <li><p><a href="/var/bool" class="item">&bull; bool</a></p></li>
+        <li><p><a href="/var/char" class="item">&bull; char</a></p></li>
+        <li><h5>This site Copyright (c) NinjaCheetah 2021</h5></li>
+      </ul>
+    </div>
+    <div class="main">
+      <h1>char</h1>
+      <h3>char variableName[10];</h3>
+      <h3>char *variableName2;</h3>
+      <p>Header: N/A (Included by default)</p>
+      <p><a href="http://manpages.org/char/3">char on manpages.org</a></p>
+      <p>The built-in implementation of "strings" in C. When you create one, you must either give a maximum length, (as shown in Example 1), or add a <code>*</code> before the name to creae a pointer char (as shown in Example 2). Pointer chars do not have a maximum length, however they must be "freed" when no longer in use to retrieve the memory they take up. If you give it a maximum length, you must add one to the total number of characters you need, because a "null terminating character" is added to the end.</p>
+      <p>In order to change the value of a char, you need to use a function like <a href="/str/strcpy">strcpy();</a></p>
+      <h4>Examples</h4>
+      <p>Example 1</p>
+      <div class="code">
+// Create and assign a new char, then print it
+#include &lt;stdio.h&gt;
+
+char newChar[13] = "Hello world!";
+
+int main() {
+    printf("%s",newChar);
+}
+      </div>
+      <p>Example 2 (Needs checking)</p>
+      <div class="code">
+// Create a new pointer char and assign it during creation, print it, then free it
+#include &lt;stdio.h&gt;
+
+char *pointerChar = "Hello world!";
+
+int main() {
+    printf("%s",pointerChar);
+    free();
+}
+      </div>
+    </div>
+  </body>
+</html>
