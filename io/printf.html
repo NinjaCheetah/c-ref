@@ -15,7 +15,6 @@
         <li><p><a href="https://ncxprogramming.com" class="item">&bull; fflush()</a></p></li>
         <li><p><a href="https://ncxprogramming.com" class="item">&bull; fopen()</a></p></li>
         <li><p><a href="https://ncxprogramming.com" class="item">&bull; fclose()</a></p></li>
-        <li><p><a href="io/" class="item">See all</a></p></li>
         <li><h5>This site Copyright (c) NinjaCheetah 2021</h5></li>
       </ul>
     </div>
@@ -29,32 +28,46 @@
       <h4>Examples:</h4>
       <p>Example 1</p>
       <div class="code">
-        <p>// Printing just text, with no variables</p>
-        <p>#include &lt;stdio.h&gt;</br></br>int main() {</p>
-        <p class="indented">printf("Hello world!");</p>
-        <p>}</p>
+// Printing just text, with no variables
+#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello world!");
+}
       </div>
       <p>Example 2</p>
       <div class="code">
-        <p>// Printing a number in your text</p>
-        <p>#include &lt;stdio.h&gt;<br><br>int number = 10;<br><br>int main() {</p>
-        <p class="indented">printf("My number is: %d",number);</p>
-        <p>}</p>
+// Printing a number in your text
+#include &lt;stdio.h&gt;
+
+int number = 10;
+
+int main() {
+    printf("My number is: %d",number);
+}
       </div>
       <p>Example 3</p>
       <div class="code">
-        <p>// Printing a char in your text</p>
-        <p>#include &lt;stdio.h&gt;<br><br>char text[6] = "word";<br><br>int main() {</p>
-        <p class="indented">printf("My text is: %s",text);</p>
-        <p>}</p>
+// Printing a char in your text
+#include &lt;stdio.h&gt;
+
+char text[6] = "word";
+
+int main() {
+    printf("My text is: %s",text);
+}
       </div>
       <p>Example 4</p>
       <div class="code">
-        <p>// Printing multiple variables in your text</p>
-        <p>#include &lt;stdio.h&gt;<br><br>int number = 15</p>
-        <p>char words[6] = "hello"<br><br>int main() {</p>
-        <p class="indented">printf("My text is %s and my number is %d.",words,number);</p>
-        <p>}</p>
+// Printing multiple variables in your text
+#include &lt;stdio.h&gt;
+
+int number = 15;
+char words[6] = "hello";
+
+int main() {
+    printf("My text is %s and my number is %d.",words,number);
+}
       </div>
     </div>
   </body>

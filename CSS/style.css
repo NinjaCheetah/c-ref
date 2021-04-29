@@ -44,7 +44,8 @@
   font-family: Consolas,"courier new";
   color: black;
   background-color: #f1f1f1;
-  padding: 2px;
+  padding: 3px;
+  white-space: pre;
 }
 .code p {
   padding: 0px;

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simplified C Reference Guide</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+  </head>
+  <body>
+    <div class="sidebar">
+      <ul>
+        <li><p><a href="/" class="section">&lt;- Back</a></p></li>
+        <li><h2><a href="/var/" class="section">Variable Types</a></h2></li>
+        <li><p><a href="https://ncxprogramming.com" class="item">&bull; int</a></p></li>
+        <li><p><a href="https://ncxprogramming.com" class="item">&bull; bool</a></p></li>
+        <li><p><a href="https://ncxprogramming.com" class="item">&bull; char</a></p></li>
+        <li><h5>This site Copyright (c) NinjaCheetah 2021</h5></li>
+      </ul>
+    </div>
+    <div class="main">
+      <h1>int</h1>
+      <h3>int variableName;</h3>
+      <p>Header: N/A (Included by default)</p>
+      <p><a href="http://manpages.org/int32/3">int on manpages.org</a></p>
+      <p>The simplest number variable in C. A standard int (aka an integer declared using just <code>int</code>, which is a 32-bit signed integer) can have a value between -2147483648 and 2147483647. If you're looking for other integer types, check the sidebar.</p>
+      <h4>Examples</h4>
+      <p>Example 1</p>
+      <div class="code">
+// Create a new int, assign it, then print it
+#include &lt;stdio.h&gt;
+
+int newNumber;
+
+int main() {
+    newNumber = 15;
+    printf("%d",newNumber);
+}
+      </div>
+      <p>Example 2</p>
+      <div class="code">
+// Create a new int and assign it during creation, then print it
+#include &lt;stdio.h&gt;
+
+int oldNumber = 42;
+
+int main() {
+    printf("%d",oldNumber);
+}
+      </div>
+    </div>
+  </body>
+</html>
