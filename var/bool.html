@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simplified C Reference Guide</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+  </head>
+  <body>
+    <div class="sidebar">
+      <ul>
+        <li><p><a href="/" class="section">&lt;- Back</a></p></li>
+        <li><h2><a href="/var/" class="section">Variable Types</a></h2></li>
+        <li><p><a href="/var/int" class="item">&bull; int</a></p></li>
+        <li><p><a href="/var/bool" class="item">&bull; bool</a></p></li>
+        <li><p><a href="/var/char" class="item">&bull; char</a></p></li>
+        <li><h5>This site Copyright (c) NinjaCheetah 2021</h5></li>
+      </ul>
+    </div>
+    <div class="main">
+      <h1>bool</h1>
+      <h3>bool variableName;</h3>
+      <p>Header: <code>stdbool.h</code></p>
+      <p>No good reference links. (But you can submit one!)</p>
+      <p>An easy way to keep track of whether something is <code>true</code> or <code>false</code>. For some reason, booleans are not available by default in C, so you must add the <code>stdbool.h</code> header to use them. Booleans can be set with <code>=</code>, and <u>must</u> be compared using <code>==</code>.</p>
+      <h4>Examples</h4>
+      <p>Example 1</p>
+      <div class="code">
+// Create a new bool, assign it, then check if it's true or false
+#include &lt;stdio.h&gt;
+#include &lt;stdbool.h&gt;
+
+bool newBool;
+
+int main() {
+    newBool = true;
+    if (newBool == true) {
+      printf("True!");
+    }
+    else {
+      printf("False!");
+    }
+}
+      </div>
+      <p>Example 2</p>
+      <div class="code">
+// Create a new bool and assign it during creation, then check if it's true or false
+#include &lt;stdio.h&gt;
+#include &lt;stdbool.h&gt;
+
+bool otherBool = false;
+
+int main() {
+    if (otherBool == true) {
+      printf("True!");
+    }
+    else {
+      printf("False!");
+    }
+}
+      </div>
+    </div>
+  </body>
+</html>
