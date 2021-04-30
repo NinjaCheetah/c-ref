@@ -22,7 +22,7 @@
       <h3>char *variableName2;</h3>
       <p>Header: N/A (Included by default)</p>
       <p><a href="http://manpages.org/char/3">char on manpages.org</a></p>
-      <p>The built-in implementation of "strings" in C. When you create one, you must either give a maximum length, (as shown in Example 1), or add a <code>*</code> before the name to creae a pointer char (as shown in Example 2). Pointer chars do not have a maximum length, however they must be "freed" when no longer in use to retrieve the memory they take up. If you give it a maximum length, you must add one to the total number of characters you need, because a "null terminating character" is added to the end.</p>
+      <p>The built-in implementation of "strings" in C. When you create one, you must either give a maximum length, (as shown in Example 1), or add a <code>*</code> before the name to creae a pointer char (as shown in Example 2). Pointer chars do not have a maximum length, however they are read-only (unless you allocate memory to the char, as shown in Example 3). If you give it a maximum length, you must add one to the total number of characters you need, because a "null terminating character" is added to the end.</p>
       <p>In order to change the value of a char, you need to use a function like <a href="/str/strcpy">strcpy();</a></p>
       <h4>Examples</h4>
       <p>Example 1</p>
@@ -36,16 +36,30 @@ int main() {
     printf("%s",newChar);
 }
       </div>
-      <p>Example 2 (Needs checking)</p>
+      <p>Example 2</p>
       <div class="code">
-// Create a new pointer char and assign it during creation, print it, then free it
+// Create a new pointer char and assign it during creation, then print it
 #include &lt;stdio.h&gt;
 
 char *pointerChar = "Hello world!";
 
 int main() {
     printf("%s",pointerChar);
-    free();
+}
+      </div>
+      <p>Example 3</p>
+      <div class="code">
+// Create a new pointer char, allocate memory for it, change its value using strcpy(), print it, then free it
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+
+int main() {
+    char *pointerChar = malloc(64);
+
+    strcpy(pointerChar,"Hello world!");
+    printf("%s",pointerChar);
+    free(pointerChar);
 }
       </div>
     </div>
